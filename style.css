@@ -2,9 +2,12 @@ html{
 	background: white;
 	font-family: 'Comic Sans MS';
 }
+.center{
+    text-align:center;
+}
 #tilt{
 	margin-top: 20%;
-	margin-left:15%;
+	text-align: center;
 	padding: 10px 30px;
     font-weight: 300;
     font-size: 80px;
