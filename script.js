@@ -1,6 +1,7 @@
  $(document).ready(function(){
  	var tilt = new Howl({
-  		src: ['tilt.mp3']
+  		src: ['tilt.mp3'],
+  		volume: 0.5
 	});
 	$("#tilt").click(killMe);
 
