@@ -1,8 +1,11 @@
 $(document).ready(function(){
+ 	
  	var tilt = new Howl({
   		src: ['tilt.mp3'],
   		volume: 0.1
 	});
+
+
 	$("#tilt").click(killMe);
 
 	function killMe(){
@@ -11,6 +14,7 @@ $(document).ready(function(){
 		window.setInterval(function(){
 			$("html").css('background-color',randomColor);
 			$("#tilt").css('color',randomColor);
+			//makeADiv();
 		},150);
 		AnimateRotate(360);
 		$("#tilt").unbind('click',killMe);	//Take off the click listeners
@@ -39,3 +43,38 @@ function AnimateRotate(angle) {
 		}
 	},'linear');
 }
+
+/*
+function makeADiv(){
+    // vary size for fun
+    var divsize = ((Math.random()*100) + 50).toFixed();
+    var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div/>').css({
+        'width':divsize+'px',
+        'height':divsize+'px',
+        'background-color': color
+    });
+
+    $('<p>TILT</p>').appendTo($newdiv);
+    // make position sensitive to size and document's width
+    var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+    var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none',
+        'color':'white'
+    });
+    $("body").append($newdiv);
+}
+*/
+
+
+
+
+
+
+
+
