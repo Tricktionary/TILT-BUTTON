@@ -1,4 +1,4 @@
- $(document).ready(function(){
+$(document).ready(function(){
  	var tilt = new Howl({
   		src: ['tilt.mp3'],
   		volume: 0.1
@@ -14,12 +14,11 @@
 		},150);
 		AnimateRotate(360);
 		$("#tilt").unbind('click',killMe);	//Take off the click listeners
-
 	}
 
 });
 
- function AnimateRotate(angle) {
+function AnimateRotate(angle) {
 	// caching the object for performance reasons
 	var $elem = $('#tilt');
 
